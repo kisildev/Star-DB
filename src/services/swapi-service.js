@@ -1,4 +1,4 @@
-class swapiService {
+export default class SwapiService {
     _apiBase = 'https://swapi.co/api';
 
     async getResource(url) {
@@ -26,7 +26,7 @@ class swapiService {
     }
 
     getPlanet(id) {
-        return this.getResource(`/planet/${id}/`);
+        return this.getResource(`/planets/${id}/`);
     }
 
     async getAllStarships() {
