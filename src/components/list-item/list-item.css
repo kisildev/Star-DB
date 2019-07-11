@@ -1,0 +1,12 @@
+.active-list {
+    max-width: 50%;
+    width: 100%;
+    margin-right: 7.5px;
+}
+.active-list-item {
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.active-list-item:hover {
+    background-color: #555;
+}

@@ -10,3 +10,14 @@ body {
 .list-group-item {
     background-color: #444;
 }
+
+.panel {
+    display: flex;
+    padding: 1rem;
+    background: #333;
+    border-radius: 10px;
+}
+.details-wrap {
+    display: flex;
+    align-items: flex-start;
+}

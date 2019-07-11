@@ -11,7 +11,7 @@ export default class App extends Component {
 
     state = {
         showRandomPlanet: true,
-        selectedItem: null
+        selectedItem: 4
     };
 
     onPersonSelected = (id) => {
@@ -26,8 +26,10 @@ export default class App extends Component {
                 Here will be Star DB App!
                 <Header />
                 <RandomPlanet />
-                <ListItem onItemSelected={this.onPersonSelected} />
-                <PersonDetails />
+                <div className="details-wrap">
+                    <ListItem onItemSelected={this.onPersonSelected} />
+                    <PersonDetails personId={this.state.selectedItem} />
+                </div>
                 <PlanetDetails />
                 <StarshipDetails />
             </div>

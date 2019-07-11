@@ -52,7 +52,7 @@ export default class RandomPlanet extends Component {
         const content = hasData ? <PlanetView planet={planet}/> : null;
 
         return (
-          <div className='random-planet'>
+          <div className='panel random-planet'>
               {errorMessage}
               {spinner}
               {content}
